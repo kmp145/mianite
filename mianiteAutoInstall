@@ -4,6 +4,8 @@ apt-get update
 apt-get upgrade
 apt-get install openjdk-7-jdk
 apt-get install wget
+apt-get install unzip
+cd /
 mkdir mianiteServer
 cd mianiteServer
 wget http://solder.endermedia.com/repository/downloads/realm-of-mianite/realm-of-mianite_1.4.1.zip
