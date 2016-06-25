@@ -1,0 +1,13 @@
+#!/bin/bash
+
+apt-get update
+apt-get upgrade
+apt-get install openjdk-7-jdk
+apt-get install wget
+mkdir mianiteServer
+cd mianiteServer
+wget http://solder.endermedia.com/repository/downloads/realm-of-mianite/realm-of-mianite_1.4.1.zip
+unzip realm-of-mianite_1.4.1.zip
+rm eula.txt
+echo -e "eula=true" >> /L2Batch/minecraft/eula.txt
+java -jar server.jar
